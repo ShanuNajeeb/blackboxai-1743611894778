@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova | Future-Ready Solutions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        :root {
+            --neon-blue: #00f0ff;
+            --neon-pink: #ff00ff;
+            --neon-green: #00ff9d;
+            --dark-bg: #0a0a0a;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: white;
+            overflow-x: hidden;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-pink)] font-orbitron">
+                    TechNova
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-white hover:text-[var(--neon-blue)] transition-colors">Features</a>
+                    <a href="#tech" class="text-white hover:text-[var(--neon-pink)] transition-colors">Tech Stack</a>
+                    <a href="#testimonials" class="text-white hover:text-[var(--neon-green)] transition-colors">Testimonials</a>
+                    <a href="#contact" class="text-white hover:text-white bg-[var(--neon-blue)] px-4 py-2 rounded-full hover:bg-opacity-80 transition-all">Contact</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div id="particles-js" class="absolute inset-0"></div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 font-orbitron">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-pink)]">Innovate.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--neon-pink)] to-[var(--neon-green)]">Automate.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--neon-green)] to-[var(--neon-blue)]">Dominate.</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Building <span id="typed" class="text-[var(--neon-blue)] font-bold"></span> for the future
+            </p>
+            <a href="#contact" class="inline-block px-8 py-3 bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-pink)] text-white font-bold rounded-full hover:shadow-lg hover:shadow-[var(--neon-blue)]/30 transition-all">
+                Get Started
+            </a>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="absolute bottom-20 left-10 w-16 h-16 rounded-full bg-[var(--neon-blue)] opacity-20 blur-xl animate-float"></div>
+        <div class="absolute top-1/4 right-20 w-24 h-24 rounded-full bg-[var(--neon-pink)] opacity-20 blur-xl animate-float-delay"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gradient-to-b from-black to-[#0f0f0f]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 font-orbitron">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-green)]">Our Solutions</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-[#111] p-8 rounded-xl border border-[#222] hover:border-[var(--neon-blue)] transition-all hover:shadow-lg hover:shadow-[var(--neon-blue)]/20">
+                    <div class="text-[var(--neon-blue)] text-4xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">AI-Powered Solutions</h3>
+                    <p class="text-gray-400">Leverage cutting-edge artificial intelligence to automate complex tasks and gain insights from your data.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-[#111] p-8 rounded-xl border border-[#222] hover:border-[var(--neon-pink)] transition-all hover:shadow-lg hover:shadow-[var(--neon-pink)]/20">
+                    <div class="text-[var(--neon-pink)] text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Automation Tools</h3>
+                    <p class="text-gray-400">Streamline your workflows with our powerful automation platform that integrates with your existing systems.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-[#111] p-8 rounded-xl border border-[#222] hover:border-[var(--neon-green)] transition-all hover:shadow-lg hover:shadow-[var(--neon-green)]/20">
+                    <div class="text-[var(--neon-green)] text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Cloud Security</h3>
+                    <p class="text-gray-400">Protect your digital assets with our enterprise-grade security solutions designed for the modern cloud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="py-20 bg-[#0f0f0f]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 font-orbitron">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--neon-green)] to-[var(--neon-blue)]">Our Tech Stack</span>
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Tech Item 1 -->
+                <div class="tech-item p-6 text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center text-4xl text-white group-hover:text-[var(--neon-blue)] transition-colors">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">React</h3>
+                </div>
+                
+                <!-- Tech Item 2 -->
+                <div class="tech-item p-6 text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center text-4xl text-white group-hover:text-[var(--neon-pink)] transition-colors">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Python</h3>
+                </div>
+                
+                <!-- Tech Item 3 -->
+                <div class="tech-item p-6 text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center text-4xl text-white group-hover:text-[var(--neon-green)] transition-colors">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">Node.js</h3>
+                </div>
+                
+                <!-- Tech Item 4 -->
+                <div class="tech-item p-6 text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center text-4xl text-white group-hover:text-[var(--neon-blue)] transition-colors">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">MongoDB</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gradient-to-b from-[#0f0f0f] to-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 font-orbitron">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--neon-pink)] to-[var(--neon-blue)]">Client Testimonials</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-[#111] p-8 rounded-xl border border-[#222] backdrop-blur-sm bg-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[var(--neon-blue)] flex items-center justify-center text-xl font-bold mr-4">JD</div>
+                        <div>
+                            <h4 class="font-bold">John Doe</h4>
+                            <p class="text-sm text-gray-400">CTO, TechCorp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"TechNova's AI solutions transformed our data processing pipeline, reducing costs by 40% while improving accuracy."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-[#111] p-8 rounded-xl border border-[#222] backdrop-blur-sm bg-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[var(--neon-pink)] flex items-center justify-center text-xl font-bold mr-4">AS</div>
+                        <div>
+                            <h4 class="font-bold">Alice Smith</h4>
+                            <p class="text-sm text-gray-400">CEO, DataSystems</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The automation tools saved us hundreds of hours per month. Implementation was seamless and support is excellent."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-[#111] p-8 rounded-xl border border-[#222] backdrop-blur-sm bg-opacity-50">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-[var(--neon-green)] flex items-center justify-center text-xl font-bold mr-4">RJ</div>
+                        <div>
+                            <h4 class="font-bold">Robert Johnson</h4>
+                            <p class="text-sm text-gray-400">Security Lead, FinTech Inc</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Their cloud security solutions gave us the confidence to migrate our entire infrastructure to the cloud."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 font-orbitron">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-green)]">Get In Touch</span>
+            </h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 bg-[#111] border border-[#222] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--neon-blue)] focus:border-transparent text-white" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 bg-[#111] border border-[#222] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--neon-pink)] focus:border-transparent text-white" placeholder="your.email@example.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 bg-[#111] border border-[#222] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--neon-green)] focus:border-transparent text-white" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 px-6 bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-green)] text-white font-bold rounded-lg hover:opacity-90 transition-all">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-12 flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-[var(--neon-blue)] transition-colors text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[var(--neon-pink)] transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[var(--neon-green)] transition-colors text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-[#0a0a0a] border-t border-[#222]">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2023 TechNova. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
